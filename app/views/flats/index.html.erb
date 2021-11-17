@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/restaurants">Simple Airbnb</a>
+  <%= link_to "Add Flat", new_flat_path(@flat), class: "btn btn-outline-primary" %>
+</nav>
+
+<h1>All our Flats</h1>
+<div class="row">
+  <%= render @flats %>
+</div>
